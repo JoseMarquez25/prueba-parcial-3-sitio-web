@@ -24,5 +24,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_PERSONAL_TOKEN }}
+          github_token: ${{ secrets.TOKEN_PRUEBA_PARCIAL3 }}
           publish_dir: C:\Users\estudiante\Desktop\.net\parcial3
