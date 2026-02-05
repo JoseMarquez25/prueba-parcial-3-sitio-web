@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrumentos Musicales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Instrumentos Musicales</h1>
+        <nav>
+            <ul>
+                <li><a href="#cuerda">Cuerdas</a></li>
+                <li><a href="#viento">Viento</a></li>
+                <li><a href="#percusion">Percusión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cuerda">
+            <h2>Instrumentos de Cuerda</h2>
+            <p>Los instrumentos de cuerda producen sonido mediante la vibración de cuerdas tensadas.</p>
+            <ul>
+                <li>Guitarra</li>
+                <li>Violín</li>
+                <li>Arpa</li>
+            </ul>
+        </section>
+
+        <section id="viento">
+            <h2>Instrumentos de Viento</h2>
+            <p>Estos instrumentos producen sonido cuando el aire pasa a través de ellos.</p>
+            <ul>
+                <li>Flauta</li>
+                <li>Clarinete</li>
+                <li>Saxofón</li>
+            </ul>
+        </section>
+
+        <section id="percusion">
+            <h2>Instrumentos de Percusión</h2>
+            <p>Producen sonido al golpear, raspar o sacudir el instrumento.</p>
+            <ul>
+                <li>Batería</li>
+                <li>Tambor</li>
+                <li>Xilófono</li>
+            </ul>
+        </section>
+
+        <section id="interactivo">
+            <h2>Prueba interactiva</h2>
+            <p>Haz clic en un botón para ver un mensaje sobre un instrumento:</p>
+            <button onclick="mostrarMensaje('Guitarra')">Guitarra</button>
+            <button onclick="mostrarMensaje('Flauta')">Flauta</button>
+            <button onclick="mostrarMensaje('Batería')">Batería</button>
+            <p id="mensaje"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Instrumentos Musicales. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
