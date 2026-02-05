@@ -25,4 +25,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.TOKEN_PRUEBA_PARCIAL3 }}
-          publish_dir: C:\Users\estudiante\Desktop\.net\parcial3
+          publish_dir: ./
