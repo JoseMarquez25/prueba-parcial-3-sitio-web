@@ -1,0 +1,28 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node (si usas Node)
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Build site (opcional)
+        run: |
+          echo "Aquí puedes construir tu sitio si necesitas compilación"
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_PERSONAL_TOKEN }}
+          publish_dir: C:\Users\estudiante\Desktop\.net\parcial3
